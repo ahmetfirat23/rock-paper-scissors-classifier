@@ -42,7 +42,7 @@ def load_model():
     x = layers.Dense(3, activation='softmax')(x)
 
     model = Model(pre_trained_model.input, x)
-    model.load_weights("my_model2.hdf5")
+    model.load_weights("my_model.hdf5")
     model.compile()
     return model
 
